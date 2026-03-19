@@ -21,6 +21,7 @@ Organização de código
 Entrada e saída de dados
 
 🚀 Projetos Incluídos
+
 🔍 1. Algoritmos de Busca em Lista
 
 Simula buscas em uma lista de compras utilizando diferentes abordagens.
@@ -92,22 +93,6 @@ stdio.h
 stdlib.h
 
 string.h
-
-▶️ Como Executar
-🔹 Compilar (exemplo)
-gcc busca.c -o busca
-gcc inventario.c -o inventario
-
-🔹 Executar
-./busca
-./inventario
-
-📋 Exemplo de Uso
-
-Busca:
-[Sequencial Iterativa] Buscando por "leite"...
--> Item encontrado no indice 5
-Inventário:
 
 ===== INVENTARIO =====
 1. Inserir item
