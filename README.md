@@ -245,8 +245,6 @@ Vetor possui limite fixo;
 Algoritmos simples não escalam bem;
 O módulo nível mestre adiciona análise de desempenho real.
 
-👨‍💻 Autor
-
-Márcio Moraes
+👨‍💻 Autor --- Márcio Moraes ---
 
 Projeto acadêmico com foco na evolução como desenvolvedor e domínio sólido dos fundamentos de programação em C.
