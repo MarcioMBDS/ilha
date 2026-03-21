@@ -14,7 +14,7 @@ Projeto desenvolvido em linguagem C com foco no aprendizado de estruturas de dad
 
 📄 Descrição dos Arquivos:
 
-----------------------
+
 🔹 isla.c
 
 Primeira versão do sistema de mochila.
@@ -35,7 +35,9 @@ Structs
 Arrays
 
 Lógica de programação
+
 ----------------------
+
 🔹 island.c
 
 Script dedicado ao estudo de algoritmos de busca.
@@ -64,7 +66,9 @@ Entender diferenças entre:
 Busca linear vs binária
 
 Iteração vs recursão
+
 ----------------------
+
 🔹 ilhaff.c
 
 Versão completa do sistema.
@@ -91,6 +95,7 @@ Menu interativo
 Interface organizada
 
 ----------------------
+
 🔹 nolibro.c
 
 Script de estudo e comparação de algoritmos de ordenação.
@@ -114,6 +119,9 @@ Objetivo:
 
 Entender comportamento dos algoritmos
 Comparar desempenho em diferentes cenários
+
+----------------------
+
 🔹 ilhaff2.c
 
 🧩 Estrutura
