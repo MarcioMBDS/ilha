@@ -44,7 +44,7 @@ Script dedicado ao estudo de algoritmos de busca.
 
 Implementações:
 
--
+
 ✔ Busca Sequencial
 
 Iterativa
@@ -55,19 +55,19 @@ Recursiva
 Iterativa
 Recursiva
 
--
+
 Características:
 
--
+
 Uso de vetor de strings
 Funções recursivas
 Comparações com strcmp
 Saída no terminal
 
--
+
 Objetivo:
 
--
+
 Entender diferenças entre:
 
 Busca linear vs binária
