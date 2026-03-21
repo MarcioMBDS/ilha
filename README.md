@@ -1,127 +1,182 @@
-🧠 Estruturas de Dados e Algoritmos em C
+# 🎒 Mochila de Sobrevivência — Código da Ilha
 
-Projeto desenvolvido em linguagem C com foco em prática de lógica de programação, estruturas de dados e algoritmos clássicos.
+Projeto desenvolvido em linguagem C com foco no aprendizado de **estruturas de dados e algoritmos de busca**, demonstrando evolução prática ao longo de diferentes versões do sistema.
 
-Este repositório reúne implementações de algoritmos de busca e um sistema de gerenciamento de inventário (estilo jogo), consolidando conceitos fundamentais da programação em C.
+---
 
-📌 Objetivo
+## 📁 Estrutura do Projeto
 
-Aplicar na prática conceitos essenciais como:
+📦 ilha
+ ┣ 📜 ilhaff.c
+ ┣ 📜 isla.c
+ ┣ 📜 island.c
+ ┣ 📜 README.md
 
-Algoritmos de busca (sequencial e binária)
+---
 
-Manipulação de arrays e strings
+## 📄 Descrição dos Arquivos
 
-Uso de structs
+### 🔹 `isla.c`
 
-Recursividade
+Primeira versão do sistema de mochila.
 
-Organização de código
+Implementa um inventário simples utilizando **vetor (lista sequencial)**.
 
-Entrada e saída de dados
+#### Funcionalidades:
 
-🚀 Projetos Incluídos
+* Inserir item
+* Remover item
+* Listar itens
+* Buscar item por nome (busca sequencial)
 
-🔍 1. Algoritmos de Busca em Lista
+#### Objetivo:
 
-Simula buscas em uma lista de compras utilizando diferentes abordagens.
+Praticar fundamentos como:
 
-Funcionalidades:
+* Structs
+* Arrays
+* Lógica de programação
 
-Busca Sequencial Iterativa
+---
 
-Busca Sequencial Recursiva
+### 🔹 `island.c`
 
-Busca Binária Iterativa
+Script dedicado ao estudo de **algoritmos de busca**.
 
-Busca Binária Recursiva
+#### Implementações:
 
-Retorno do índice do item encontrado
+✔ Busca Sequencial
 
-Tratamento de item inexistente
+* Iterativa
+* Recursiva
 
-Conceitos aplicados:
+✔ Busca Binária
 
-strcmp para comparação de strings
+* Iterativa
+* Recursiva
 
-Recursividade
+#### Características:
 
-Análise de eficiência entre algoritmos
+* Uso de vetor de strings
+* Funções auxiliares recursivas
+* Comparações com `strcmp`
+* Impressão de resultados no terminal
 
-🎒 2. Sistema de Inventário (Mochila)
+#### Objetivo:
 
-Sistema interativo via terminal para gerenciamento de itens.
+Entender diferenças entre:
 
-Funcionalidades:
+* Busca linear vs binária
+* Iteração vs recursão
 
-➕ Inserir item
+---
 
-➖ Remover item
+### 🔹 `ilhaff.c`
 
-📋 Listar itens
+Versão final e completa do sistema.
 
-🔎 Buscar item
+#### Estruturas utilizadas:
 
-🧾 Exibição automática após operações
+* Vetor (lista sequencial)
+* Lista encadeada
 
-Estrutura do Item:
-typedef struct {
-    char nome[30];
-    char tipo[20];
-    int quantidade;
-} Item;
-Conceitos aplicados:
+#### Funcionalidades:
 
-Structs
+* Inserir item
+* Remover item
+* Listar itens
+* Buscar item (sequencial)
+* Ordenar itens (Bubble Sort)
+* Buscar item (binária - vetor)
 
-Vetores estáticos
+#### Extras:
 
-Busca sequencial
+* Contador de comparações
+* Menu interativo
+* Interface organizada no terminal
 
-Manipulação de dados em memória
+---
 
-Menu interativo com switch
+## 🧠 Conceitos Aplicados
 
-🛠️ Tecnologias Utilizadas
+* Structs em C
+* Arrays (vetores)
+* Ponteiros
+* Alocação dinâmica (`malloc` / `free`)
+* Listas encadeadas
+* Algoritmos:
 
-Linguagem C
+  * Busca sequencial (iterativa e recursiva)
+  * Busca binária (iterativa e recursiva)
+* Ordenação (Bubble Sort)
+* Análise de desempenho
 
-Bibliotecas padrão:
+---
 
-stdio.h
+## 📊 Comparação de Estruturas
 
-stdlib.h
+| Operação         | Vetor    | Lista Encadeada |
+| ---------------- | -------- | --------------- |
+| Inserção         | O(1)     | O(1)            |
+| Remoção          | O(n)     | O(1)*           |
+| Busca Sequencial | O(n)     | O(n)            |
+| Busca Binária    | O(log n) | ❌ Não aplicável |
 
-string.h
+* Considerando remoção no início ou com referência ao nó anterior.
 
-===== INVENTARIO =====
-1. Inserir item
-2. Remover item
-3. Listar itens
-4. Buscar item
+---
 
-🧠 Aprendizados
+## 🖥️ Interface (ilhaff.c)
 
-Durante o desenvolvimento, foram reforçados:
+MOCHILA DE SOBREVIVENCIA - CODIGO DA ILHA
 
-Diferença entre algoritmos iterativos e recursivos
+Itens na Mochila: X/10
 
-Importância de consistência na nomenclatura
+1. Adicionar Item (Loot)
+2. Remover Item
+3. Listar Itens
+4. Buscar (Sequencial)
+5. Ordenar (Vetor)
+6. Buscar (Binária)
+7. Lista Encadeada
+0. Sair
 
-Manipulação de memória em C
+---
 
-Estruturação de programas maiores
+## ⚙️ Como Compilar e Executar
 
-Criação de menus interativos no terminal
+gcc isla.c -o isla
+./isla
 
-👨‍💻 Autor
+gcc island.c -o island
+./island
 
-Márcio Moraes
-🎓 Estudante de Engenharia de Software
-💻 Foco em Back-end (Node.js | TypeScript | C | Ruby on Rails)
+gcc ilhaff.c -o ilhaff
+./ilhaff
 
-⭐ Observação
+---
 
-Este projeto é educacional e representa minha evolução prática em programação.
+## ⚠️ Observações Importantes
 
-Sugestões, melhorias e feedbacks são sempre bem-vindos!
+* A busca binária exige ordenação prévia
+* A lista encadeada não suporta busca binária
+* O vetor possui limite fixo (`MAX_ITENS`)
+* A lista encadeada cresce dinamicamente
+* O arquivo `island.c` é demonstrativo
+
+---
+
+## 🎯 Aprendizados
+
+Este projeto demonstra:
+
+* Evolução de um sistema simples para um sistema completo
+* Diferença entre estruturas estáticas e dinâmicas
+* Impacto da escolha de estrutura no desempenho
+* Aplicação prática de algoritmos clássicos
+
+---
+
+## 👨‍💻 Autor Márcio Moraes
+
+Projeto acadêmico desenvolvido com foco na evolução como desenvolvedor e domínio dos fundamentos de programação em C.
