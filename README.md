@@ -239,11 +239,11 @@ gcc ilhaff2.c -o ilhaff2
 
 ⚠️ Observações Importantes
 
-Busca binária exige ordenação prévia
-Lista encadeada não suporta busca binária
-Vetor possui limite fixo
-Algoritmos simples não escalam bem
-O módulo nível mestre adiciona análise de desempenho real
+Busca binária exige ordenação prévia;
+Lista encadeada não suporta busca binária;
+Vetor possui limite fixo;
+Algoritmos simples não escalam bem;
+O módulo nível mestre adiciona análise de desempenho real.
 
 👨‍💻 Autor
 
